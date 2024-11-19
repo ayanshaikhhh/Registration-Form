@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    height: 100%;
+    background: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.registration-form{
+    margin: auto;
+    margin-top: 60px;
+    height: 450px;
+    width: 500px;
+    background-color: rgba(18, 17, 17, 0.462);
+    border-radius: 5px;
+}
+
+header{
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-size: 22px;
+}
+
+
+.label-input{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    margin-left: 55px;
+}
+
+label{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.gender{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 55px;
+
+}
+.gender label{
+    display: flex;
+    /* gap: 20px; */
+}
+
+.gender input{
+    margin-left: 20px;
+}
+
+.btn{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.btn button{
+    padding: 4px;
+    width: 70%;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(255, 0, 0);
+}
+
+.label-input input{
+    width: 70%;
+    background-color: rgba(238, 225, 225, 0);
+    border: none;
+    border-bottom: 2px solid rgba(192, 192, 192, 0.693);
+}
+
+.label-input input:focus{
+    /* background-color: red; */
+    /* border: none; */
+    outline: none;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.402);
+}
+
+div img {
+    position: absolute;
+}
+
+.label-input input{
+    padding-top: 5px;
+}
+
+.btn button:hover{
+    background-color: rgba(255, 0, 0, 0.605);
+    border: none;
+    width: 30%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.gender p{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.316);
+}
