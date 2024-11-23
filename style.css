@@ -105,3 +105,46 @@ div img {
 .gender p{
     border-bottom: 2px solid rgba(255, 255, 255, 0.316);
 }
+
+#error{
+    color: rgb(255, 0, 0);
+    font-size: 0.8rem;
+    opacity: 0;
+    margin-left: 15%;
+     
+}
+
+#error2{
+    color: red;
+    font-size: 0.8rem;
+    opacity: 0;
+    margin-left: 15%;
+}
+
+#error3{
+    color: red;
+    font-size: 0.8rem;
+    opacity: 0;
+    margin-left: 25%;
+}
+
+#error4{
+    color: red;
+    font-size: 0.8rem;
+    opacity: 0;
+    margin-left: 4%;
+}
+
+#error5{
+    color: red;
+    font-size: 0.8rem;
+    opacity: 0;
+    margin-left: 15%;
+}
+
+#error6{
+    color: red;
+    font-size: 0.8rem;
+    opacity: 0;
+    margin-left: -5%;
+}

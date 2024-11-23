@@ -8,7 +8,7 @@
 </head>
 <body>
     <section class="background-img">
-        <form class="registration-form">
+        <form class="registration-form" id="registration-form">
             <header>
                 <h1>Registration Form</h1>
             </header>
@@ -17,42 +17,48 @@
                 <div>
                     <label>
                         <span>Full Name <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAVNJREFUOE+t1D9IlVEYx/HPRVRscE4Dcwl0kXbNdjeRAhEhRQe3nFWUSByCEnSIysFRoRpCGgWdBBcXwUWRQEFBHfyzae+Bc+Nwubf7Fr7reZ7v+T3n+f3egnv6ClU4LejGI/zCOo7L9fwNNISPqEsab/AKq6WwSqAm7OMcy9hCZ4TU43E8+8OrBHoRbx3HfHL7DKbRg5+pqkqg1/iAp9hJGp5hA6P4kgf0EisoVTSFN/+iqBkHOMUsvqIfE2iIb3SWR1GouZetFS8LPnqOoPC/fBQM2IuuzEsPkxGOsBlHPak22iAWs7epxS4uk4bGbAntuMYIvhfPStc/kMXhc9zWp8wzd2XiUIMxvEcffoSaFBRG2MM7vM2R5VAX4vIEFyloGEtozTZ2mAPUEc0aVH1LQQtRcgjpbQ7QA1xFn02moLClNszlgBRLQu62sVbtf5Sb+RueYz8TKfntSwAAAABJRU5ErkJggg=="/></span>
-                        <input type="text" placeholder="Enter your username" required>
+                        <input type="text" placeholder="Enter your username" id="fname" required>
+                        <p id="error">Please enter full name</p>
                     </label>
                 </div>
     
                 <div>
                     <label>
                         <span>Username <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAQFJREFUOE+t1D8rRlEYAPDfm7/5CMogSia7QTLajIwm2WTQm9UkyRew8gnEajIoGaQsUnwAhSKK+9SrTrf73vceOctZnud3nvM8596Wf1qtHs4gFjGFW5ziqyqnDhrFOSaTxCvM46WM1UFHWK44/QAbOdAbRiqgB4w3hYbw3qV/HxhuCkVcNHe6ArvAbA60gDMMJEnR5Dlc50ARG2Nf7+w3iEY/5Y4/66l2G/8E2qU39AvfYQeP6UllKKaxhzX01ZT02YnbxnfElaFANjPuFLH7ZWgM90XZ/RnQMyLvNa0oyoy7566VYqrHKXSI1Vyl+Ix2sZVCS5j5A3SJk17/o8buDxNLJhOoZwFGAAAAAElFTkSuQmCC"/></span>
-                        <input type="text" placeholder="Enter your username" required>
+                        <input type="text" placeholder="Enter your username" id="username" required>
+                        <p id="error2">Please enter username </p>
                     </label>
                 </div>
     
                 <div>
                     <label>
                         <span>Email <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAARRJREFUOE+t07ErRlEcxvHPy2BhMopBKQaLTP4ByWASUUSZvBallMGgGBED2SRKymI0GRkZ+A8UK5Pi3jpH1331dr3uGU/n9+15nt9zKko6lZI4Sgc14RA9DSh8QDUqmsQZ7vD+B1gbBjASQVXsYQtr+CwAa8Y2ljCXB6Xz15jCSx1YB84xFN7M50HHmMEzJnDzC2wYJ4mDdpxiOqtoEfvoRScu0JpYXMdmsJpa2cBqEu4rxvEWcv1WlAU9oQtX6A9Wl3EQrNxiLKgezINi2H14DHZawgIWMvZ2EhUr+Ah3hUBxfjbNALu4zGUWQTVbyyoq0AB/UlQPWAP6b7NHY4/S1R6hu4if3Jv7tN2l//4GhPwc+QLMTT0LQJdGwQAAAABJRU5ErkJggg=="/></span>
-                        <input type="email" placeholder="Enter your email" required>
+                        <input type="email" placeholder="Enter your email" id="email" required>
+                        <p id="error3">Please enter email </p>
                     </label>
                 </div>
     
                 <div>
                     <label>
                         <span>Phone Number <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAYhJREFUOE+t1D9IVmEUx/GPRFJD0dRik1PgEBFY1GSFFoYlNEVBBQWu2eBWg1CLOgkmiUWDKBQ5FGjZUEN/EIemwFFoaiiDyGrwOfBceHm5vt4XOstdnvM9f36/c1v8p2gp4ezGFczgZ9U69aBWvMBpfMRJ/KoCqwXtwFOcxyK6E+gtevB7O1gtaAj3cBsjuJW/r9GLP41gtaCHuIxdNQnPc4fX8Kgq6E56eBf78AM38QAvcQF/q4L68SwnzWMSN9CWoF+b2dFefMPjDAjlXiULDGK0GVC8DdVCpQP4js9ox2GsZliMfhFPsFEUqPdRZ/bPBAZwEO+SenuyomHSORzCEvoKn5U5expX83ih5P689Fh4EQE5lbp/jzPJKutloKgeDzpwHQGOiMSz+JJGjwKF11bQVQaKpFBqIcPiZIZT5Q8lC1/GEZzbChQ50VlUDQtEvMEU1vAJY3mPs7jUCFQ0cCy5/X66v+PYWddV+C0U/FcFVOTGn+Fo8taJfEbh/vHiBpsBNfTkJqTcR27AkanYAAAAAElFTkSuQmCC"/></span>
-                        <input type="tel" placeholder="Enter your number" required>
+                        <input type="tel" placeholder="Enter your number" id="phone-number" required>
+                        <p id="error4">Please enter phone number </p>
                     </label>
                 </div>
     
                 <div>
                     <label>
                         <span>Password <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAP9JREFUOE/t07EuRFEQxvHfhuh4AqIgEZ3CKjUaUeiVEqFUEGEfgIJKoVCSeAKi1CgUEpGIaNDwBkKHe5KzcrK7d+9JKE1zijnzz3zfzNT8UdQqOAOYwzCecYr3TjXdQKM4R3ibcYdZvLbCykB9uME49nERO1vGJabxlcLKQEHOWSFjA7tJwQ42i1wd1zmgNexhBE9JwUTsdAWHOaAtbGMIL0nBGB6wGiX/pMqk/Rq0gJPM1frEfPRSa0e36MdRBmwp+hcm2AYK+sOOzGSArtBbLOnkP6jUra4e3eMDYbOr4gBvmOpkdrir9SpCkm8g3F/b+HuwiMEM2GNxi8fNf9/96TgT+lU+TQAAAABJRU5ErkJggg=="/></span>
-                        <input type="password" placeholder="Enter your password" required>
+                        <input type="password" placeholder="Enter your password" id="password" required>
+                        <p id="error5">Please enter password </p>
                     </label>
                 </div>
     
                 <div>
                     <label>
                         <span>Confirm Password <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAP9JREFUOE/t07EuRFEQxvHfhuh4AqIgEZ3CKjUaUeiVEqFUEGEfgIJKoVCSeAKi1CgUEpGIaNDwBkKHe5KzcrK7d+9JKE1zijnzz3zfzNT8UdQqOAOYwzCecYr3TjXdQKM4R3ibcYdZvLbCykB9uME49nERO1vGJabxlcLKQEHOWSFjA7tJwQ42i1wd1zmgNexhBE9JwUTsdAWHOaAtbGMIL0nBGB6wGiX/pMqk/Rq0gJPM1frEfPRSa0e36MdRBmwp+hcm2AYK+sOOzGSArtBbLOnkP6jUra4e3eMDYbOr4gBvmOpkdrir9SpCkm8g3F/b+HuwiMEM2GNxi8fNf9/96TgT+lU+TQAAAABJRU5ErkJggg=="/></span>
-                        <input type="password" placeholder="Confirm your password" required>
+                        <input type="password" placeholder="Confirm your password" id="confirm-password" required>
+                        <p id="error6">Please enter confirm password </p>
                     </label>
                 </div>
             </div>
@@ -71,7 +77,7 @@
             </div>
 
             <div class="btn">
-                <button type="submit">Submit</button>
+                <button type="submit" id="btn">Submit</button>
             </div>
         </form>
         </section>
